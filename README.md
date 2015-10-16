@@ -48,6 +48,9 @@ Thus, directly using BLE functions are more convenient. Yet, we have some proble
 
 Discovery solves this problem by creating some specific characteristics that is binded to the service of the advertiser. When the listener peer discovers our device, it initially checks whether it can read the **CBAdvertisementDataLocalNameKey** value. If it can, there is no problem, the device is identified. If it **can't read** (which means our app is at background state) it attempts to connect and discover our services. After the connection is successful, the peer device goes through our services and it reads our characteristics, and there it retrieves our username - voilà! Then, simply disconnects.
 
+## Android port ##
+An android port is avaialable here: https://github.com/joshblour/discovery-android
+
 ## What's next? ##
 
 I wanted to keep Discovery as simple as possible for the initial release. In the next release I will probably add some reliable error handling and some callbacks for the developer to interfere whenever necessary. And maybe some time later, I could add some extra features for peers to persistently connect each other and continue exchanging stream of information.
