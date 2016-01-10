@@ -56,14 +56,16 @@
         
         switch (startOption) {
             case DIStartAdvertisingAndDetecting:
-                _shouldAdvertise = YES;
-                _shouldDiscover = YES;
+                [self setShouldAdvertise:YES];
+                [self setShouldDiscover:YES];
                 break;
             case DIStartAdvertisingOnly:
-                _shouldAdvertise = YES;
+                [self setShouldAdvertise:YES];
+                [self setShouldDiscover:NO];
                 break;
             case DIStartDetectingOnly:
-                _shouldDiscover = YES;
+                [self setShouldAdvertise:NO];
+                [self setShouldDiscover:YES];
                 break;
             case DIStartNone:
             default:
