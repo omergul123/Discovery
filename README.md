@@ -20,9 +20,13 @@ Discovery is a very simple but useful library for discovering nearby devices wit
 
 I added a simple but cool example alongside with the library. Simply download, run **pod install** and install it on two or more of your bluetooth enabled devices and have some fun. It works both on iPhone and iPad.
 
-## Install
+## Cocoapods Install
 
 pod 'Discovery', '~> 1.0'
+
+## Files
+
+For a traditional installation of class files, use all .h & .m files from /Discovery
 
 ## Example usage
 
